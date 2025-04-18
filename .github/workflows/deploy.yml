@@ -33,6 +33,8 @@ jobs:
           else
           npm i
           fi
+      - name: Create CNAME file
+        run: echo "timer.safiullin.dev" > ./dist/CNAME
 
       - name: Build
         run: npm run build
